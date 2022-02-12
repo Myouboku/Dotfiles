@@ -18,7 +18,7 @@
     enable_guicolors = false
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "nil"
+    statusline_separator = "arrow"
     statusline_iseparator = "bar"
     buffer_index_type = 4
     windows_index_type = 3
@@ -28,7 +28,10 @@
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
     # autocomplete method
-    autocomplete_method = "deoplete"
+    autocomplete_method = "coc"
+    # bootstraps
+    bootstrap_before = 'myspacevim#before'
+    bootstrap_after = 'myspacevim#after'
 
 # Enable autocomplete layer
 [[layers]]
@@ -49,6 +52,10 @@ name = "colorscheme"
 name = "git"
 [[layers]]
 name = "VersionControl"
+
+# Show number of occurences when searching 
+[[layers]]
+name = "incsearch"
 
 # dracula colorscheme
 [[custom_plugins]]
