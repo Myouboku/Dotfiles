@@ -1,7 +1,6 @@
 function! myspacevim#before() abort
-  set mouse=a
+  set ttymouse=sgr
 endfunction
 
 function! myspacevim#after() abort
-
 endfunction

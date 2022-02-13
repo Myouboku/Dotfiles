@@ -37,12 +37,42 @@
 [[layers]]
 name = 'autocomplete'
 auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "cycle"
+auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
 name = 'shell'
-default_position = 'top'
-default_height = 30
+default_position = 'bottom'
+default_height = 20
+
+# Language server protocol
+[[layers]]
+name = "lsp"
+
+# Javascript code completion
+[[layers]]
+name = "lang#javascript"
+enable_flow_syntax = true
+format_on_save = true
+# Toml code completion
+[[layers]]
+name = "lang#toml"
+# Vimscripting code completion
+[[layers]]
+name = "lang#vim"
+# Html code completion
+[[layers]]
+name = "lang#html"
+emmet_leader_key = "<C-e>"
+emmet_filetyps = ['html', 'hbs', 'twig']
+
+# Write file with elevated privileges
+[[layers]]
+name = "sudo"
+
+# Checkers
+[[layers]]
+name = "checkers"
+lint_on_the_fly = true
 
 [[layers]]
 name = "colorscheme"
@@ -57,8 +87,25 @@ name = "VersionControl"
 [[layers]]
 name = "incsearch"
 
+# CtrlP
+[[layers]]
+name = "ctrlp"
+
+# disable core statusline
+# [[layers]]
+# name = "core#statusline"
+# enable = false
+
 # dracula colorscheme
 [[custom_plugins]]
 repo = "dracula/vim"
 name = "dracula"
 merged = false
+
+# Airline statusbar
+# [[custom_plugins]]
+# repo = "vim-airline/vim-airline"
+# merged = false
+# [[custom_plugins]]
+# repo = "vim-airline/vim-airline-themes"
+# merged = false
